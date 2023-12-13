@@ -41,7 +41,6 @@ main {
   margin: auto;
   padding: 60px;  /* TODO: Responsive style to reduce padding on smaller screens */
   padding-top: 80px;
-  height: 100vh;
 }
 
 header nav {
@@ -534,6 +533,7 @@ button:hover {
   border-radius: 20px;
   z-index: 99;
   text-align: center;
+  max-height: 60vh;
 }
 #resultOutput-container .content-container {
   max-width: 400px;
