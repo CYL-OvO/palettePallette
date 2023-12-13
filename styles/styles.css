@@ -17,11 +17,11 @@ html, body {
 }
 
 body {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   padding: 0;
   margin: 0;
   background-color: #f4f5f6;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
   font-family: "Neuton", serif;
   color: #262730;
   overflow-x: hidden;
@@ -39,8 +39,10 @@ legend {
 main {
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
-  padding-top: 40px;
+  padding: 60px;  /* TODO: Responsive style to reduce padding on smaller screens */
+  padding-top: 80px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 header nav {
@@ -133,7 +135,7 @@ header {
 
 .headline {
   text-align: center;
-  margin-top: 45px; 
+  /* margin-top: 45px; */
 }
 
 /*media queries for nav*/
@@ -189,7 +191,7 @@ header {
     width: 32px;
     top: 20px;
     right: 20px;
-    z-index: 5;
+    /* z-index: 5; */
     opacity: 0;
     cursor: pointer;
   }
@@ -200,7 +202,7 @@ header {
     right: -4px; 
     width: 40px; 
     height: 40px; 
-    z-index: 5; 
+    /* z-index: 5; */
     opacity: 0; 
     cursor: pointer;
   }
@@ -209,7 +211,7 @@ header {
     position: fixed;
     top: -17px;
     right: 20px;
-    z-index: 1001;
+    /* z-index: 1001; */
     flex-direction: column;
     justify-content: space-between;
     height: 36px;
@@ -250,7 +252,7 @@ header {
     padding: 15px 20px;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
-    z-index: 1000;
+    z-index: 1;
   }
 
   .menu-items li:hover,
@@ -309,7 +311,7 @@ header {
 /*instruction text on index*/
 
 body {
-  padding: 2rem;
+  /* padding: 2rem; */
   font-family: "Neuton", serif;
   background: #f3f3f3;
   justify-content: center;
@@ -621,6 +623,7 @@ button:hover {
   padding: 30px;
   border-radius: 20px;
   display: flex;
+  flex-direction: column; /* Center img */
   place-items: center;
 }
 .about .text {
@@ -719,8 +722,8 @@ button:hover {
 /*media queries for landing page*/
 @media screen and (max-width: 768px) {
   .center-image {
-    max-width: 150%; 
-    margin-left: -75px;
+    max-width: 100%;
+    /* margin-left: -75px; */
   }
 }
 
