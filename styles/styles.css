@@ -42,7 +42,6 @@ main {
   padding: 60px;  /* TODO: Responsive style to reduce padding on smaller screens */
   padding-top: 80px;
   height: 100vh;
-  overflow-y: scroll;
 }
 
 header nav {
@@ -394,7 +393,7 @@ button:hover {
   justify-content: space-between;
 }
 .ingredients-container {
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 .ingredient-radio {
@@ -425,10 +424,10 @@ button:hover {
 
 /*book styling*/
 .bowl {
-  max-width: 400px;
+  /* max-width: 400px; */
   list-style: none;
   padding: 0;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 400px;
   position: relative;
   z-index: 1;
@@ -437,14 +436,16 @@ button:hover {
   grid-template-rows: 80px 80px;
   place-items: center;
   place-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .bowl-container {
   flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 0;
-  min-width: 600px;
-  min-height: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 400px;
+  /* min-height: 400px; */
 }
 
 .bowl li {
@@ -463,12 +464,12 @@ button:hover {
   position: absolute;
   top: 0;
   content: "";
-  width: 600px;
-  height: 400px;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
   background-image: url(../images/book.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right -10px bottom -15px;
+  background-position: center;
   z-index: -1;
 }
 
@@ -784,7 +785,7 @@ button:hover {
   }
 
   section#main-container {
-    margin-top: -150px;
+    margin-top: -60px;
   }
   .headline {
     margin-top: 34px;
@@ -823,18 +824,18 @@ button:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .bowl-container {
+  /*.bowl-container {
     min-width: 410px;
   }
   .bowl {
     height: auto;
     min-height: 424px;
-  }
+  }*/
   .bowl::after {
     width: 100%;
-    max-width: 380px;
+    /* max-width: 380px;
     min-height: 350px;
-    height: auto;
+    height: inherit; */
   }
   #resultOutput-container {
     width: calc(100% - 40px);
