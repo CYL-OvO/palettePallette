@@ -1242,7 +1242,7 @@ if (showBtn) {
     var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
-        type: "progressbar",
+        type: "bullets",
       },
       navigation: {
         nextEl: ".swiper-button-next",
